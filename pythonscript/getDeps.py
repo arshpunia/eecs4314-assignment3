@@ -26,7 +26,7 @@ def printDeps(filename):
                     if(count>1 and dependency!="\\"):
                         
                         cleanedDependency = dependency.strip()
-                        actualDependeeFilepath = os.path.join("./","../../postgresql-13.4.tar/postgresql-13.4/",dependee)
+                        actualDependeeFilepath = os.path.join("./","../postgresql-13.4.tar/postgresql-13.4/",dependee)
                         actualDependeeFolder = os.path.abspath(os.path.join(actualDependeeFilepath,"../")) #Dependee folder technically exists one layer above the given filepath
                         formattedDependency = os.path.abspath(os.path.join(actualDependeeFolder,cleanedDependency))
                         
@@ -38,7 +38,7 @@ def printDeps(filename):
                         #print(actualDependeeFilepath+","+cleanedDependency+","+formattedDependency)
                         #print(dependee+","+formattedDependency[53:].replace("\\","/"))
                         
-                        print("cLinks "+dependee+" "+formattedDependency[53:].replace("\\","/")) 
+                        print("cLinks "+dependee+" "+formattedDependency[74:].replace("\\","/")) 
                         
                 count+=1
                 
