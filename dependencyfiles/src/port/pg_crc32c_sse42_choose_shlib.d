@@ -1,0 +1,6 @@
+pg_crc32c_sse42_choose_shlib.o: pg_crc32c_sse42_choose.c \
+ ../../src/include/c.h ../../src/include/postgres_ext.h \
+ ../../src/include/pg_config_ext.h ../../src/include/pg_config.h \
+ ../../src/include/pg_config_manual.h ../../src/include/pg_config_os.h \
+ ../../src/include/port.h ../../src/include/port/pg_crc32c.h \
+ ../../src/include/port/pg_bswap.h
